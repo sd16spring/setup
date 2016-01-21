@@ -24,7 +24,7 @@ sudo pip install path.py markupsafe jupyter singledispatch backports_abc certifi
 sudo pip install swampy
 
 # Install Atom, and Atom's package manager
-sudo apt-get install -y atom ampd
+sudo apt-get install -y atom
 
 # Install Atom packages
 apm install floobits
