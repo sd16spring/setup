@@ -30,3 +30,6 @@ sudo apt-get install -y atom ampd
 apm install floobits
 apm install linter
 apm install linter-flake8
+
+# Print success
+echo 'Success!'
