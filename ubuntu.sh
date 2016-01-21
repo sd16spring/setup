@@ -1,5 +1,5 @@
 #!/bin/bash -eu
-# Usage: curl https://github.com/sd16spring/setup/blob/master/setup.sh | bash
+# Usage: curl https://raw.githubusercontent.com/sd16spring/setup/master/ubuntu.sh | bash
 
 # Add the Atom (text editor)
 sudo add-apt-repository ppa:webupd8team/atom
