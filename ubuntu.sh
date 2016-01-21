@@ -9,19 +9,22 @@ sudo add-apt-repository ppa:webupd8team/sublime-text-3
 sudo apt-get update
 sudo apt-get upgrade
 
-# Install some Git.
-# - Git is the version control system we will use this semester.
-sudo apt-get install -y git build-essential
+# Git is the version control system we will use this semester.
+sudo apt-get install -y git
+sudo apt-get install -y build-essential
 
-# Install Python packages.
+# Install Ubuntu packages to support Python.
 # - python-pip is a Python package installer.
 # - python-tk is a GUI toolkit for Python.
-sudo apt-get install -y python-pip python-pip python-tk python-dev flake8
+# - python-dev is required for some Python packages to build
+# - flake8 provides lint support to editor packages
+sudo apt-get install -y python-pip python-tk python-dev flake8
 
-# Install Jupyter notebook which you'll be using for pre-class exercises
+# Install Python packages:
+
+# Jupyter notebook, which you'll be using for pre-class exercises
 sudo pip install path.py markupsafe jupyter singledispatch backports_abc certifi jsonschema
-
-# Install Allen's Python package swampy.
+# Allen's Python package swampy.
 sudo pip install swampy
 
 # Install Atom and ST3
@@ -32,6 +35,9 @@ sudo apt-get install sublime-text-installer
 apm install floobits
 apm install linter
 apm install linter-flake8
+
+# We haven't successfully automated ST3 package installs.
+# Follow the manual setup instructions to install ST3 Floobits and Anaconda.
 
 # Print success
 echo 'Success!'
