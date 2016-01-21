@@ -1,6 +1,9 @@
 #!/bin/bash -eu
 # Usage: curl https://raw.githubusercontent.com/sd16spring/setup/master/ubuntu.sh | bash
 
+# exit the script on errors (else bash continues to the next line)
+set -euo pipefail
+
 # Add the Atom (text editor) and Sublime Text 3 (ST3) (another text editor) repositories
 sudo add-apt-repository ppa:webupd8team/atom
 sudo add-apt-repository ppa:webupd8team/sublime-text-3
