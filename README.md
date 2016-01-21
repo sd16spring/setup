@@ -2,11 +2,11 @@
 
 This repository contains a script to install [Python](https://www.python.org) (programming langue), [Jupyter](http://jupyter.org) (Python notebooks), git (source control), and [Atom](https://atom.io) (text editor) on an Ubuntu [Linux](https://en.wikipedia.org/wiki/Linux) workstation.
 
-Usage:
+## Usage
 
 Type or paste the next line into a Terminal, and then press Enter.
 ```
-curl https://github.com/sd16spring/setup/blob/master/setup.sh | bash
+curl https://raw.githubusercontent.com/sd16spring/setup/master/ubuntu.sh | bash
 ```
 
 This takes a while to complete.
