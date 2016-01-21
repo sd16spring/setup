@@ -20,11 +20,10 @@ sudo apt-get install -y build-essential
 # - python-pip is a Python package installer.
 # - python-tk is a GUI toolkit for Python.
 # - python-dev is required for some Python packages to build
-# - flake8 provides lint support to editor packages
-sudo apt-get install -y python-pip python-tk python-dev flake8
+sudo apt-get install -y python-pip python-tk python-dev
 
 # Install Python packages:
-
+sudo pip install flake8 # provides lint support to editor packages
 # Jupyter notebook, which you'll be using for pre-class exercises
 sudo pip install path.py markupsafe jupyter singledispatch backports_abc certifi jsonschema
 # Allen's Python package swampy.
