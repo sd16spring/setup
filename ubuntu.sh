@@ -2,7 +2,7 @@
 # Usage: curl https://raw.githubusercontent.com/sd16spring/setup/master/ubuntu.sh | bash
 
 # Run the script strictly, for easier debugging and failure detection:
-set -e          # errors stop the script (instead of continuing to the next line)
+# set -e          # errors stop the script (instead of continuing to the next line)
 set -u          # fail when on undefined variable is read
 set -o pipefail # fail when the left side of a pipe fails
 
