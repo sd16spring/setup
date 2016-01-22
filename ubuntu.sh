@@ -38,8 +38,20 @@ apm install floobits
 apm install linter
 apm install linter-flake8
 
-# We haven't successfully automated ST3 package installs.
-# Follow the manual setup instructions to install ST3 Floobits and Anaconda.
+# Install Sublime Text 3 package manager and packages
+curl https://sublime.wbond.net/Package%20Control.sublime-package -o ~/.config/sublime-text-3/Installed\ Packages/Package\ Control.sublime-package
+ST3_CONFIG_DIR=~/.config/sublime-text-3
+ST3_USER_SETTINGS=$ST3_CONFIG_DIR/Packages/User/Package\ Control.sublime-settings
+mkdir -p $ST3_CONFIG_DIR/Packages/User
+[[ -f "$ST3_USER_SETTINGS" ]] || cat > "$ST3_USER_SETTINGS" <<EOF
+{
+    "installed_packages":
+    [
+        "Anaconda",
+        "Floobits"
+    ]
+}
+EOF
 
 # Print success
 echo 'Success!'
